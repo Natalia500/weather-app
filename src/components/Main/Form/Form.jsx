@@ -16,7 +16,6 @@ const Form = (props) => {
   return (
     <div className="form">
       <form onSubmit={props.weatherMethod}>
-        <div></div>
         <input
           className="inputText"
           type="text"
