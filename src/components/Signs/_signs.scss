@@ -1,0 +1,23 @@
+.signsInfo {
+    margin: 100px 0 0 50px;
+    img {
+        float: left;
+        margin: 0 20px 0 10px;
+    }
+    h2 {
+        text-align: center;
+        margin-top: 50px;
+        font-family: 'Poller One', cursive;
+    }
+    p {
+        font-size: 20px;
+        color: black;
+        font-family: monospace;
+    }
+}
+
+@media (max-width: 600px) {
+    .signsInfo {
+        margin: 80px 20px 0 20px;
+    }
+}

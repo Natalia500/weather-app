@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.wrapperWeatherInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 400px;
+    width: 35%;
+    margin-top: 150px;
+  }
+  .weatherInfo {
+    background-color: bisque;
+    margin-top: 150px;
+    padding: 5px 0 50px 20px;
+    height: 400px;
+    width: 500px;
+    h2 {
+      font-family: "Poller One", cursive;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .wrapperWeatherInfo {
+    flex-direction: column;
+
+    img {
+      height: 0px;
+      margin-top: 10px;
+    }
+    .weatherInfo {
+      margin-top: 100px;
+      width: 90%;
+      h2 {
+        font-size: 20px;
+        padding-top: 10px;
+      }
+    }
+  }
+}

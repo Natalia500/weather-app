@@ -1,0 +1,62 @@
+.form {
+  .imgClear {
+    width: 20px;
+    height: 20px;
+    margin-top: -3px;
+    margin-left: -30px;
+    margin-right: 10px;
+  }
+
+  .inputText {
+    border: 2px solid #3498db;
+    background-color: lightgray;
+    padding: 4px;
+    width: 40%;
+    border-radius: 0.6em;
+  }
+  ::placeholder {
+    opacity: 0.5; /* Firefox */
+    color: #000;
+  }
+
+  .btnSubmit,
+  .btnDelete {
+    border: 2px solid #3498db;
+    background-color: lightgray;
+    padding: 5px 20px 5px 20px;
+    margin: 10px 0 0 15px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border-radius: 0.6em;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: #000;
+    box-shadow: 0 0 40px 40px lightgray inset, 0 0 0 0 lightgray;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    &:hover,
+    .btnSubmit:focus {
+      color: #000;
+      outline: 0;
+      box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .form {
+    .inputText {
+      width: 30%;
+    }
+    .btnSubmit,
+    .btnDelete {
+      padding: 0px 10px 0px 10px;
+      margin: 10px 0 0 15px;
+    }
+  }
+}
